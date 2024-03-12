@@ -1,13 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
         <nav>
-            <a href="/About">About Me</a>
-            <a href="/Contact">Contact</a>
-            <a href="/Portfolio">Portfolio</a>
-            <a href="/Resume">Resume</a>
+            <Link key={1} className="nav-link text-light" to="/about">
+          About Me
+        </Link>,
+        <Link key={2} className="nav-link text-light" to="/contact">
+          Contact
+        </Link>,
+        <Link key={3} className="nav-link text-light" to="/portfolio">
+          Portfolio
+        </Link>,
+        <Link key={4} className="nav-link text-light" to="/resume">
+          Resume
+        </Link>
         </nav>
     )
 }
