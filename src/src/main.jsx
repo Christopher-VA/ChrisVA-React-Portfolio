@@ -6,12 +6,14 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import ErrorPage from './components/Error.jsx';
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <App/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
